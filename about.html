@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/myall.css">
+    <style>
+        .banner{
+            height: 320px;
+            background-image: url(/images/eric-barbeau-JgFTqBHIHFE-unsplash.jpg);
+        }
+        .img01{
+            height: 280px;
+            background-image: url(/images/shen-shen-AR0nLavGPc4-unsplash.jpg)
+        }
+        .img02{
+            height: 280px;
+            background-image: url(/images/cou.jpg);
+        }
+        .img03{
+            height: 280px;
+            background-image: url(/images/lampos-aritonang-24gR_9lCdes-unsplash.jpg)
+        }
+        .img04{
+            height: 280px;
+            background-image: url(/images/m-j-Rfn1OSXQQjA-unsplash.jpg);
+        }
+        .timeline-section{
+            position:relative;
+        }
+        .timeline-section::before{
+        position: absolute;
+        content:"";
+        top:3px;
+        bottom: 1px;
+        width: 10px;
+        background-image: linear-gradient(45deg, rgba(53, 30, 184, 0.05), var(--mycolor07, 0.7));
+
+        left:50%;
+        transform:translateX(-50%);
+        }
+        .timeline-pointer{
+            position:relative;
+        }
+        .timeline-pointer::before{
+            position:absolute;
+            content:"";
+            top: -5px;
+            width: 20px;
+            height: 20px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            border: 5px solid var(--mycolor08);
+        }
+        .timeline-pointer:hover::before{
+          width: 25px;
+          height:25px;
+          border: 5px solid var(--mycolor06);
+        }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning" href="#">與．嘉義</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html" target="_blank">歷史介紹</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">產品介紹</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <div class="banner bg-info bg-cover"></div>
+      <div class="container pb-5">
+        <div class="timeline-section">
+          <div class="row mt-3 justify-content-center align-items-center timeline-pointer">
+              <div class="col-md-5 text-center">
+                  <div class="text01">
+                      <h3 class="fw-900 text-danger">關於嘉義<small class="text-muted"> About Us</small></h3>
+                      <p class="col-md-11">嘉義歷史悠久，承載著豐富的文化底蘊。早在荷西時期，嘉義已是草港之一。清代，嘉義成為重要的縣治，留下眾多古老府第和廟宇。日治時期，嘉義成為台灣政經重鎮，建設蓬勃發展。二戰後，嘉義持續演變，成為現代都會，然而仍保留著濃厚的傳統文脈。嘉義的歷史層層疊疊，是臺灣多元文化的見證者，也是深具人文風采的城市。</p>
+                  </div>
+              </div>
+              <div class="col-md-5">
+                  <div class="img01 bg-cover"></div>
+              </div>
+          </div>
+          <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-pointer">
+              <div class="col-md-5 text-center">
+                  <div class="text01">
+                    <h3 class="fw-900 text-danger">原住民文化</h3><small class="text-muted">Store Info.</small>
+                    <p class="col-md-11">嘉義縣擁有多樣的原住民文化，其中以阿里山地區的原住民為主要族群。這片土地承載著豐富的山岳風情和神秘的傳說，原住民部落保留傳統的族群文化，包括傳統織布技藝、樂舞表演和祭典儀式。阿里山小火車線路貫穿原住民聚落，成為文化交流的重要通道。嘉義的原住民文化為這片風光明媚的土地增添了深厚的歷史底蘊。</p>
+                  </div>
+              </div>
+              <div class="col-md-5">
+                  <div class="img02 bg-cover"></div>
+              </div>
+          </div>
+          <div class="row mt-3 justify-content-center align-items-center timeline-pointer">
+            <div class="col-md-5 text-center">
+                <div class="text01">
+                  <h3 class="fw-900 text-success">客家文化</h3><small class="text-muted">Store Info.</small>
+                  <p>嘉義擁有豐富的客家文化，尤以朴子市一帶為其主要聚落。客家建築如客家圓樓、土角厝見於此地，展現著獨特的建築風格。當地客家料理口味濃郁，如客家酸菜白肉、客家粄條等，彰顯著客家人對飲食的獨到品味。客家方言在日常交流和文化活動中廣泛使用，為當地特有的語言文化。傳統客家藝術如客家歌仔戲，也在嘉義保留著獨有的表演風貌。客家文化在嘉義縣繪就了豐富多彩的人文風景。</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="img03 bg-cover"></div>
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-center align-items-center flex-row-reverse timeline-pointer">
+          <div class="col-md-5 text-center">
+              <div class="text01">
+                  <h3 class="fw-900 text-success">日治時期</h3><small class="text-muted">Store Info.</small>
+                  <p>嘉義在日治時期扮演著臺灣政經要地的角色，留下深刻的歷史印記。當時，城市建設逐漸現代化，如今仍可見歷史悠久的古蹟和街區。嘉義成為重要的農業據點，農產品供應日本本土。日治時期的建築風格，如嘉義火車站、老街區，保存完整，見證了當時的文化融合。嘉義在那段時期歷經變遷，今日的城市風貌深受當時的影響。</p>
+              </div>
+          </div>
+          <div class="col-md-5">
+              <div class="img04 bg-cover"></div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+</body>

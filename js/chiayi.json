@@ -1,0 +1,62 @@
+[
+      {
+        "name": "阿里山茶",
+        "description": "以香氣濃郁、口感獨特而聞名的高品質茶葉。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "文旦",
+        "description": "口感清脆、多汁，是當地知名的水果之一。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "高梁",
+        "description": "以生產高品質高梁酒而著名，具有獨特的風味。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "蓮霧",
+        "description": "夏季水果，口感清爽、多汁，受歡迎的水果之一。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "香蕉",
+        "description": "香蕉栽培面積廣大，口感香甜，為當地重要的農產品。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "木瓜",
+        "description": "肉質細緻、甜度適中，常用來製作木瓜牛奶等飲品。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "櫻桃番茄",
+        "description": "個小而多汁，是美味的生食選擇。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "蜜棗",
+        "description": "外表金黃、果肉甜蜜，是當地的特色水果。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "花生",
+        "description": "廣泛種植，用於製作花生糖等特產品。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "芒果",
+        "description": "夏季豐收，口感多汁、香甜，是嘉義的重要水果。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "甘藍",
+        "description": "綠葉蔬菜，富含營養，常見於當地農產品市場。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      },
+      {
+        "name": "龍眼",
+        "description": "夏季水果，具有清香甜美的風味，是當地農產品之一。",
+        "image_url":"https://fakeimg.pl/300x200/200"
+      }
+    ]

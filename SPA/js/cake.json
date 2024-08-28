@@ -1,0 +1,83 @@
+  [
+      {
+        "name": "御坂美琴",
+        "alias": "超電磁砲",
+        "ability": "超電磁能力",
+        "affiliation": "學習城市學園",
+        "description": "主要角色之一，擁有強大的超電磁能力，是學習城市學園的學生。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "初春飾利",
+        "alias": "白亞蓮",
+        "ability": "控制風的能力",
+        "affiliation": "學習城市學園",
+        "description": "風紀委員會的成員之一，能夠控制風的強大能力。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "佐天涙子",
+        "alias": "幻想殺手",
+        "ability": "幻想殺手能力",
+        "affiliation": "學習城市學園",
+        "description": "擁有能夠摧毀幻想的力量，是學習城市學園風紀委員會的成員。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "白井黑子",
+        "alias": "善惡必報",
+        "ability": "瞬間移動",
+        "affiliation": "學習城市學園",
+        "description": "具有瞬間移動能力，同時是一位神祕的黑帽駭客。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "御坂妹妹",
+        "alias": "妹妹",
+        "ability": "超電磁能力",
+        "affiliation": "學習城市學園",
+        "description": "與美琴相似的能力者，是美琴的妹妹。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "上条當麻",
+        "alias": "幻想殺手",
+        "ability": "幻想殺手能力",
+        "affiliation": "學習城市學園",
+        "description": "能夠干擾、破壞他人的超自然能力，同時也是美琴的朋友。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "佐天濱",
+        "alias": "佐天大聖",
+        "ability": "不死之身",
+        "affiliation": "學習城市學園",
+        "description": "擁有不死之身的生物學實驗體，同時是學習城市學園的學生。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "御坂快傳",
+        "alias": "超電磁砲",
+        "ability": "超電磁能力",
+        "affiliation": "學習城市學園",
+        "description": "超電磁砲系列中的另一位能力者，是美琴的同伴。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "美遊",
+        "alias": "綠發",
+        "ability": "超電磁能力",
+        "affiliation": "學習城市學園",
+        "description": "擁有強大的超電磁能力，同時是美琴的朋友。",
+        "image_url": "images/cake01.jpg"
+      },
+      {
+        "name": "芙蘭達",
+        "alias": "冰雪巫女",
+        "ability": "控制冰雪",
+        "affiliation": "學習城市學園",
+        "description": "能夠控制冰雪的能力者，同時是學習城市學園的學生。",
+        "image_url": "images/cake01.jpg"
+      }
+    ]
+  

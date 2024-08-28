@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖表練習 - 旅館民宿 - 觀光資訊資料庫</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-md-3">
+                    <ul class="list-group" id="regionList">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="h5 fw-900 me-auto">南投縣</div>
+                                <span class="badge text-bg-warning h3 fw-900">99</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var regionData = [];
+        var regionTitle = [];
+        var counter = [];
+        var chart01;
+        $(function () {
+            const ctx01 = document.getElementById('myChart');
+
+            chart01 = new Chart(ctx01, {
+                type: 'bar',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: '各區旅館分布圖',
+                        data: [],
+                        borderWidth: 2,
+                        backgroundColor: ['#FAA98B', '#E6AECF', '#AEE0DD', '#01ACBD', '#FF445F', '#6F925A'],
+                        color: '#666'
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+
+            axios.get('js/hotel_C_f.json')
+                .then(function (response) {
+                    // handle success
+                    console.log(response.data.XML_Head.Infos.Info);
+                    response.data.XML_Head.Infos.Info.forEach(function (item) {
+                        var getRegion = item.Region;
+                        if (counter[getRegion] == undefined) {
+                            counter[getRegion] = regionData.length;
+                            regionData.push(new Array());
+                            regionTitle[counter[getRegion]] = getRegion;
+                        }
+                        regionData[counter[getRegion]].push(item);
+                    });
+                    console.log(regionTitle);
+                    console.log(counter);
+                    console.log(regionData);
+
+                    $("#regionList").empty();
+                    regionTitle.forEach(function (item, key) {
+                        var strHTML = '<li class="list-group-item" data-region="' + item + '""><div class="d-flex"><div class="h5 fw-900 me-auto">' + item + '</div><span class="badge text-bg-warning h3 fw-900">' + regionData[key].length + '</span></div></li>';
+                        $("#regionList").append(strHTML);
+                    });
+
+                    $("#regionList .list-group-item").bind("click", function () {
+                        console.log($(this).data("region"));
+
+                        var getNewRegion = $(this).data("region");
+                        var townData = [];
+                        var townTitle = [];
+                        var townCounter = [];
+
+                        regionData[counter[getNewRegion]].forEach(function (item) {
+                            var getRegion = item.Town;
+                            if (townCounter[getRegion] == undefined) {
+                                townCounter[getRegion] = townData.length;
+                                townData.push(new Array());
+                                townTitle[townCounter[getRegion]] = getRegion;
+                            }
+                            townData[townCounter[getRegion]].push(item);
+                        });
+
+                        console.log(townTitle);
+                        console.log(townCounter);
+                        console.log(townData);
+
+                        chart01.data.labels = [];
+                        chart01.data.datasets[0].data = [];
+                        townTitle.forEach(function (item, key) {
+                            chart01.data.labels.push(item);
+                            chart01.data.datasets[0].data.push(townData[key].length);
+                        })
+                        chart01.data.datasets[0].label= getNewRegion+'各區旅館分布圖';
+                        chart01.update();
+                    })
+
+
+
+                    // regionTitle.forEach(function (item, key) {
+                    //     if (item == null) {
+                    //         item = '其他';
+                    //     }
+                    //     chart01.data.labels.push(item);
+                    //     chart01.data.datasets[0].data.push(regionData[key].length);
+                    // })
+                    // chart01.update();
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .finally(function () {
+                    // always executed
+                });
+
+        })
+
+    </script>
+</body>
+
+</html>
